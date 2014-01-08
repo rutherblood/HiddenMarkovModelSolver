@@ -104,12 +104,10 @@ class markovModelSolver
 
 		cout<<"\nEnter the symbol spit string:\n";
 		cin>>symbolSpit;
-		//cout<<"sexy";
 		while(!markovStringCheck(symbolSpit))
 		{
 			cout<<"\nEnter a valid symbol spit string:\n";
 			cin>>symbolSpit;
-			cout<<"sexy2";
 		}
 		stateTransitionArray=new int[symbolSpit.length()];
 		for(int i=0;i<symbolCount;i++)
@@ -141,7 +139,6 @@ int main()
 
 void markovModelSolver::modelSolver()
 {
-	//cout<<"sexy3";
 	if(markovStringCheck(symbolSpit))
 	{
 		int stringLength=symbolSpit.length();
